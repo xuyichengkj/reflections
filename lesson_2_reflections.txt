@@ -1,0 +1,44 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+Answer: After initializing a repository, the meta data files are created. If
+        we don't do that, the directory is just a directory, not a repository.
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+
+Answer: Staging area is a buffer between working directory and repository. It
+saves local files to be commited so that if you get a small change and it worked
+out, but too small to make a commit, you can store the file in buffer and update
+it when a logical commit is ready.
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+Answer: You can put all the files that need to be commited and commit them as a
+        bundle, which creates a "logical commit".
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+Answer: It's useful when you want to try some new features or make experienments
+        and don't want to break the current version.
+
+How do the diagrams help you visualize the branch structure?
+
+Answer: It gives me a clear view of where the commit is in the branch tree, and 
+        better understand what the reachability is.
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+Answer: The result of merging two branches together is we get a new branch with
+        all the commits in the original two branches. Representing it in the
+        diagram makes the understanding of the merge easier.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
+
+Answer: Automatic merging gives a easier way of doing the merge, while it can't
+        be 100% sure that the merging result is what you want.
+        Manual merging can give you confidence in the result of merging, while it
+        takes more time since it's manual work. 
